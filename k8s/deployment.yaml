@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: medi-deployment
+  labels:
+    app: medi-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: medi-app
+  template:
+    metadata:
+      labels:
+        app: medi-app
+    spec:
+      containers:
+      - name: medi-container
+        image: pratik7491/medi-app:latest # replace with your DockerHub image
+        ports:
+        - containerPort: 8000
