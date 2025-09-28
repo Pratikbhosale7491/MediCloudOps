@@ -37,7 +37,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      # Simulated deployment step (not real, just for CV/project)
+       
       - name: Apply K8s Manifests
         run: |
           echo "kubectl apply -f k8s/deployment.yaml"

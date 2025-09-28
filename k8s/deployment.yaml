@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: medi-container
-        image: pratik7491/medi-app:latest # replace with your DockerHub image
+        image: pratik7491/medi-app:latest 
         ports:
         - containerPort: 8000
